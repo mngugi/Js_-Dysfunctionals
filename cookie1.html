@@ -1,0 +1,15 @@
+<!-- test.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Cookie XSS example</title>
+</head>
+<body>
+  <script>
+   document.cookie =sessionsid=122355665656994466979332352656598956563262;
+   alert(document.cookie);
+  </script>
+</body>
+</html>

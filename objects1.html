@@ -1,0 +1,22 @@
+<!-- this is a example for creating an object1 -->
+<html>
+<body>
+        <h1> This is a demo for creating an object 1 :) </h1>	
+    <script>
+    function vulnerable (description , cveid){
+
+        this.description = description;
+        this.cveid = cveid;
+        this.alertVulnerabilitiyDetails = function () {
+            alert(this.description + ':' +this.cveid);
+
+        }
+    }
+    var vuln1 = new vulnerable("xss in phpbb", 123);
+    vuln1.alertVulnerabilitiyDetails();
+    
+    </script>
+</body>>
+
+
+</html>

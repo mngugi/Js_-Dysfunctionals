@@ -1,0 +1,30 @@
+<!-- this is a example for creating enumerating object properties -->
+<html>
+<body>
+        <h1> This is a demo for enumerating object properties keys :) </h1>	
+    <script>
+    function vulnerable (description , cveid){
+
+        this.description = description;
+        this.cveid = cveid;
+        this.alertVulnerabilitiyDetails = function () {
+            alert(this.description + ':' +this.cveid);
+
+        }
+    }
+    var vuln1 = new vulnerable("xss in phpbb", 123);
+    //vuln1.alertVulnerabilitiyDetails();
+    vulnerable.prototype.isVulnerable = function(){
+        alert ('xss');
+    }
+
+    for (prop in vuln1){
+        alert(prop + ':' +vuln1[prop]);
+
+    }
+    alert(Object.keys(vuln1));
+    </script>
+</body>>
+
+
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <h1 id="title"> hello js Welcome to the world of DOMs </h1>
+    <h2> This is the first tag </h2>
+    <h2> This is the second tag </h2>
+	<body>
+		<script>
+	var var1 = document.getElementById("title");
+    
+    var1.innerHTML = "Dom xssed ";
+    var h2tags = document.getElementsByTagName("h2");
+    alert(h2tags.length);
+    
+    h2tags[1].innerHTML = "this tag has changed!";
+    for(i=0; i<h2tags.length; i++)
+    {
+        alert(h2tags[i].innerHTML);
+
+    }
+
+	
+		</script>
+	
+	</body>
+
+</html>

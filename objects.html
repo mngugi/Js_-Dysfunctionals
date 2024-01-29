@@ -1,0 +1,19 @@
+<!-- this is a example for creating an object -->
+<html>
+<body>
+        <h1> This is a demo for creating an object :) </h1>	
+    <script>
+    function vulnerable (description , cveid){
+
+        this.description = description;
+        this.cveid = cveid;
+    }
+    var vuln1 = new vulnerable("xss in phpbb", 123);
+    alert(vuln1.description);
+    alert(vuln1.cveid);
+    
+    </script>
+</body>>
+
+
+</html>

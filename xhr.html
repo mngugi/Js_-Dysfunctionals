@@ -1,0 +1,15 @@
+<script>
+var req = new  XMLHttpRequest();
+req.onreadystatechange=function()
+{
+ if(req.readyState == 4 && req.status == 200);
+ {
+   Response=req.responseText;
+
+ }
+
+};
+req.open("GET", "/var/www/html/htmli.php",true );
+req.send();
+
+</script>

@@ -1,0 +1,1 @@
+%3Cscript%3E%0Avar%20req%20%3D%20new%20%20XMLHttpRequest()%3B%0Areq.onreadystatechange%3Dfunction()%0A%7B%0A%20if(req.readyState%20%3D%3D%204%20%26%26%20req.status%20%3D%3D%20200)%3B%0A%20%7B%0A%20%20%20Response%3Dreq.responseText%3B%0A%0A%20%7D%0A%0A%7D%3B%0Areq.open(%22GET%22%2C%20%22%2Fvar%2Fwww%2Fhtml%2Fhtmli.php%22%2Ctrue%20)%3B%0Areq.send()%3B%0A%0A%3C%2Fscript%3E

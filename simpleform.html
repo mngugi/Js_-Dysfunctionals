@@ -1,0 +1,26 @@
+<html>
+	<h1> Try and Catch Finally </h1>
+	<body> 
+		
+			<form id = "form1" action="/authenticate" method="get">
+             Username: <input type="text" name="username" />
+             <br>
+             Password: <input type="password" name="pass" />
+             <input type="submit" value="submit" />
+            </form>
+            </br>
+            <script>
+                function InterceptForm() {
+                    alert(document.forms["form1"]["username"].value);
+                    alert(document.forms[0].elements[1].value);
+                    alert(document.forms[0].elements[0].value="Job");
+                    document.forms[0].action = "http://local:8888";
+                    return true;
+                    
+                }
+                form1.onsubmit = InterceptForm;
+		</script>
+	
+	</body>
+
+</html>
