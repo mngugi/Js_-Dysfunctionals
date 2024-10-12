@@ -6,7 +6,7 @@
   <title>Secure Cookie Example</title>
 </head>
 <body>
-  <p>Secure Cookie Example</p>
+  <h2>Secure Cookie Example</h2>
   <script>
     Set-Cookie; sessionsid=122355665656994466979332352656598956563262; HttpOnly; Secure; SameSite=Strict;
    
@@ -14,13 +14,13 @@
     
 
   </script>
-   <p><b>Using HttpOnly Cookies:</b>Cookies that are used to store sensitive 
-    information like session IDs should be marked with the HttpOnly flag.
-    This ensures that they cannot be accessed via client-side JavaScript 
+   <p><b>Using HttpOnly Cookies:</b>Cookies that are used to store sensitive<br>
+    information like session IDs should be marked with the HttpOnly flag.<br>
+    This ensures that they cannot be accessed via client-side JavaScript <br>
     and are only sent with HTTP requests.</p>
 
-    <p><b>Using SameSite Attribute:</b>The SameSite attribute prevents the browser
-        from sending this cookie along with cross-site requests, which helps prevent
+    <p><b>Using SameSite Attribute:</b>The SameSite attribute prevents the browser<br>
+        from sending this cookie along with cross-site requests, which helps prevent<br>
          Cross-Site Request Forgery (CSRF) attacks. </p>
 </body>
 </html>
