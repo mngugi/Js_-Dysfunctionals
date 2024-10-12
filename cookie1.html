@@ -1,6 +1,7 @@
-<!-- test.html -->
 <!DOCTYPE html>
-<html>
+<!-- test.html -->
+
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -8,7 +9,9 @@
 </head>
 <body>
   <script>
+    //<!-- assign sesssion id without security attributes -->
    document.cookie =sessionsid=122355665656994466979332352656598956563262;
+   //<!-- xss vulnerability , attacker can inject malicious code like this one  -->
    alert(document.cookie);
   </script>
 </body>
