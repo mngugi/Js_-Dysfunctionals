@@ -8,3 +8,5 @@
         console.log(answer);
         
     }
+
+    calProduct(num1, num2)
