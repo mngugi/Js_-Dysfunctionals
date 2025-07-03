@@ -19,4 +19,4 @@
         console.log(answerDiv);
     }
 
-    
+    calDive(num2, num1);
