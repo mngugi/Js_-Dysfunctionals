@@ -9,6 +9,8 @@
         
     }
 
+    calProduct(num1, num2);
+
     function calDive(num2, num1) {
         let answerDiv = num1 / num2;
 
@@ -16,3 +18,5 @@
         
         console.log(answerDiv);
     }
+
+    
