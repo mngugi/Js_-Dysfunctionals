@@ -20,3 +20,10 @@
     }
 
     calDive(num2, num1);
+
+    function rem(num1, num2){
+        let remainder = num1 % num2;
+        console.log(remainder);
+    }
+
+    rem(num1, num2);
