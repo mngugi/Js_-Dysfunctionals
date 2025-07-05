@@ -32,3 +32,4 @@
         let sum = num1 + num2;
         console.log(sum);
     }   
+    calSum(num1, num2);
