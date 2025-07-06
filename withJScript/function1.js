@@ -33,3 +33,9 @@
         console.log(sum);
     }   
     calSum(num1, num2);
+
+    function calSub(num1, num2) {
+        let sub = num1 - num2;
+        console.log(sub);
+    }       
+    calSub(num1, num2);
