@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+
+        {
+            "type": "godot-quickjs",
+            "request": "attach",
+            "name": "Attach to Godot",
+            "hostname": "localhost",
+            "port": 5556
+        },
+
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Containers: Attach to Node",
+            "remoteRoot": "/usr/src/app"
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/withJScript/function1.js"
+        },
+
+        {
+            "nodejs.executablePath": "/usr/local/bin/node"
+        }
+
+    ]
+}
