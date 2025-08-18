@@ -39,3 +39,10 @@
         console.log(sub);
     }       
     calSub(num1, num2);
+
+    function square(num1, num2):
+    {
+        var squa = num1^2;
+        console.log(squaroot);
+    }
+    square(num1);
